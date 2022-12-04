@@ -5,6 +5,12 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { join } from 'path';
 import { ProductModule } from './product/product.module';
 
+/*
+ TODO DB接続でエラー発生
+  見本のコード（https://github.com/CIRCLECI-GWP/nest-starter-testing）でも同じエラーが出る。
+  一旦、放置
+ */
+
 @Module({
   imports: [
     TypeOrmModule.forRoot({
