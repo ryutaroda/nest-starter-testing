@@ -3,7 +3,7 @@ import { ProductService } from './product.service';
 import { ProductController } from './product.controller';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ProductRepository } from './product.repository';
-
+// コメント
 @Module({
   imports: [TypeOrmModule.forFeature([ProductRepository])],
   providers: [ProductService],
